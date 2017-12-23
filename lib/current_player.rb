@@ -5,6 +5,6 @@ def turn_count(board)
   end
   sum
 end
-def current_player(turn_count)
-  turn_count.even? ? 'X' : 'O'
+def current_player(board, turn_count)
+  turn_count(board).even? ? 'X' : 'O'
 end
