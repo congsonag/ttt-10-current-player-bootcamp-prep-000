@@ -1,5 +1,7 @@
 def turn_count(board)
-  board.reduce(0, :+) { |turn| if turn == ' X ' || turn == ' O ' }
+  sum = 0
+  board.each do |turn|
+    sum += 1 if turn == ' X ' || turn == ' O '
 end
 
 def current_player(turn_count)
