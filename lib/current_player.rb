@@ -1,4 +1,4 @@
-def turn_count
+def turn_count(board)
   board.reduce(0, :+) { |turn| if turn == ' X ' || turn == ' O ' }
 end
 
